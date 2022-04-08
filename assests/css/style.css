@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.navbar{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: tomato;
+}
+.nav-links a{
+    color: white;
+}
+.nav-links a:hover{
+    color: #49d806;
+}
+.logo{
+    font-size: 25px;
+}
+.menu{
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+.menu li a :hover{
+    color: white;
+    border-radius: 6px;
+    
+}
+
+.menu li{
+    padding: 5px 15px;
+}
+input[type=checkbox]{
+    display: none;
+}
+
+.navbar_icon{
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+@media(max-width:768px){
+    .menu{
+        display: none;
+        position: absolute;
+        background-color: tomato;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+   .menu li:hover{
+        display: inline-block;
+        background-color: tomato;
+        transition: 0.3s ease;
+    }
+    .menu li+li{
+        margin-top: 12px;
+
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+    .navbar_icon{
+        display: block;
+    } 
+}
+
+/*****/
+
+.flex-container {
+    display: flex;
+    text-align: justify;
+    font-size: 20px;
+    flex-direction: row;
+    margin-top: 40px;
+    padding: 18px 18px;
+  }
+  
+  .left {
+    padding: 25px;
+    flex: 50%;
+    margin-top: 60px;
+  }
+  .left .heading {
+    font-family: 'Rubik Wet Paint', cursive;
+  }
+  
+  .right {
+    padding: 10px;
+    flex: 50%;
+  }
+  .img-fluid{
+      width: 100%;
+      height: auto;
+      border-radius: 25px;
+  }
+  .img-fluid:hover{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .btn{
+    margin-top: 30px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .btn:hover{
+      background-color: tomato;
+  }
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+  /****/
+  .About{
+      text-align: justify;
+      margin-top: 20px;
+     
+      
+  }
+  .about-text{
+      padding: 35px 35px;
+      font-size: 18px;
+      
+  }
+ 
+/****services**/
+.Services{
+    display: flex;
+    padding: 35px 35px;
+  font-size: 30px;
+  text-align: center;
+}
+.service-left{
+   
+    padding: 10px;
+    flex: 50%;
+}
+.service-center{
+   
+    padding: 10px;
+    flex: 50%;
+}
+.service-right{
+  
+    padding: 10px;
+    flex: 50%;
+}
+.services-img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+}
+@media (max-width: 800px) {
+    .Services {
+      flex-direction: column;
+    }
+  }
+
+  /****card***/
+  .row{
+    padding: 35px 35px;
+  }
+.column {
+    text-align: justify;
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px 15px;
+    margin: 10px 10px;
+    text-align: justify;
+    line-height: 20px;
+
+    background-color: #f1f1f1;
+  }
+  .row2{
+      margin-top: 30px;
+  }
+  
