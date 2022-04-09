@@ -219,4 +219,54 @@ input[type=checkbox]{
   .row2{
       margin-top: 30px;
   }
+  /**Gallary*/
+  .main{
+    margin-top: 20px;
+  }
+  .gallary-text{
+    color: tomato;
+    margin-top: 230px;
+  }
+.Gallary{
+  
+padding: 10px;
+  display: block;
+  float: left;
+  width: 25%;
+  margin-top: 50px;
+
+}
+.img-gallary{
+  width: 100%;
+  height: auto;
+}
+.img-gallary:hover{
+  transform: scale(1.1);
+}
+@media screen and (max-width: 600px) {
+  .Gallary {
+    width: 100%;
+    display: block;
+  
+    padding: 10px 10px;
+  }
+}
+
+  
+  /**contact*/
+  .contact{
+    display: flex;
+    padding: 35px 35px;
+  font-size: 30px;
+  text-align: center;
+  }
+  .contact1{
+    padding: 10px;
+    flex: 50%;
+  }
+  .contact2{
+    padding: 10px;
+    flex: 50%;
+  }
+  /**form**/
   
